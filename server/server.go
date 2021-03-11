@@ -2,7 +2,7 @@ package server
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/xenyy/train-booking-api/handler"
+	handler "github.com/xenyy/train-booking-api/handlers"
 	"gorm.io/gorm"
 )
 

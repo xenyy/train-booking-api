@@ -6,7 +6,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/xenyy/train-booking-api/models"
-	"github.com/xenyy/train-booking-api/utils/"
+	"github.com/xenyy/train-booking-api/utils"
 )
 
 func (h *Handler) GetAllTickets(c *gin.Context) {
