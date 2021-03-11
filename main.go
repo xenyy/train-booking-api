@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/xenyy/train-booking-api/database/connection"
+	connection "github.com/xenyy/train-booking-api/db"
 	"github.com/xenyy/train-booking-api/models"
 	"github.com/xenyy/train-booking-api/server"
 )
@@ -33,7 +33,7 @@ func main() {
 		log.Fatal("failed to connect to postgresql database", err)
 	}
 
-	err = db.SetupDatabase(db,
+	err = connection.SetupDatabase(db,
 		&models.Ticket{},
 	)
 
